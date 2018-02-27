@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rabaa006/ontologies/2017/10/Influence_Recognition#"
+     xml:base="http://www.semanticweb.org/rabaa006/ontologies/2017/10/Influence_Recognition"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2017/10/Influence_Recognition">
+        <rdfs:comment>Ontology for the  Influence ( Need, Personality, Subjective well-Being)  Recognition Method 
+
+Is it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ways to detect or recognize Influences</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Human Needs are necessities for the development of physical and mental growth of individuals</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Personalities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Personality</ace_lexicon:CN_sg>
+        <rdfs:comment>Personality is defined as an individual pattern of affect, behavior, cognition and goals over time and space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Personality_Recognitions</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Personality_Recognition</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Refers to how people experience the quality of their lives</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Subjective_well_Being_Recognitions</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Subjective_well_Being_Recognition</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabaa006/ontologies/2017/10/untitled-ontology-320#Twitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabaa006/ontologies/2017/10/untitled-ontology-320#Twitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
