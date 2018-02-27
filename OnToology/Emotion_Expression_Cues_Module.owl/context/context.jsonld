@@ -1,0 +1,267 @@
+{
+  "@context" : {
+    "Respiration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration"
+    },
+    "TV_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"
+    },
+    "Nose" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Nose"
+    },
+    "Forhead" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Forhead"
+    },
+    "Eyes_Crown_feet" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Crown_feet"
+    },
+    "range" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#range",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "loudness" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#loudness",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Speech_emotional_cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues"
+    },
+    "Brain_Potentials" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_Potentials"
+    },
+    "Electromyogram_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Facial_emotional_cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_emotional_cues"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Eyes_Eyelids" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Eyelids"
+    },
+    "Emotional_Expression_Cue" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue"
+    },
+    "Brows_Entire" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Entire"
+    },
+    "Speech" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech"
+    },
+    "Heart_Rate_Variability_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Skin_conductance_Response_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "stressDistribution" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#stressDistribution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Chest" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chest"
+    },
+    "Emotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion"
+    },
+    "Verabl_Eomtional_Cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Verabl_Eomtional_Cues"
+    },
+    "Eyes_Muscle" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Muscle"
+    },
+    "Skin_conductance_Response" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response"
+    },
+    "Abdominal" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Abdominal"
+    },
+    "Blood_Pressure" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure"
+    },
+    "Collapsed_Posture" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Collapsed_Posture"
+    },
+    "Electromyogram" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram"
+    },
+    "Eyes_Upper_Lid" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Upper_Lid"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration",
+      "@type" : "@id"
+    },
+    "Eye_Movements_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Arms" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Arms"
+    },
+    "Electroencephalography" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography"
+    },
+    "Brows_Inner_Corners" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Inner_Corners"
+    },
+    "Lips" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips"
+    },
+    "level" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#level",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Lips_Corner" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Corner"
+    },
+    "Lower__Face" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face"
+    },
+    "Pupil_Diameter" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter"
+    },
+    "Affective_State" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State"
+    },
+    "Eyes" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes"
+    },
+    "Head" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Head"
+    },
+    "Hands" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Hands"
+    },
+    "Chin" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chin"
+    },
+    "Eye_Movements" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements"
+    },
+    "Transient_facial__features" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transient_facial__features"
+    },
+    "tempo" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#tempo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Mental-State" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State"
+    },
+    "Gestural_emotional_cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues"
+    },
+    "isExpressedThrough" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isExpressedThrough",
+      "@type" : "@id"
+    },
+    "TV_vbg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"
+    },
+    "duration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration"
+    },
+    "variability" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#variability",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Mouth" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mouth"
+    },
+    "Expanded_Posture" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Expanded_Posture"
+    },
+    "Skin_temperature_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Electroencephalography_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Cheeks" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cheeks"
+    },
+    "durationOfPauses" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#durationOfPauses",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Blood_Pressure_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Respiration_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "express" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#express",
+      "@type" : "@id"
+    },
+    "Pupil_Diameter_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter_Reading",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Physiological_Emotional_Cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues"
+    },
+    "Heart_Rate_Variability" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability"
+    },
+    "Facial_Furrows" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_Furrows"
+    },
+    "TV_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"
+    },
+    "Brain_potentials_Reading" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_potentials_Reading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Lips_Upper" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Upper"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "Conductal_Emotional_Cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    },
+    "Shoulders" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Shoulders"
+    },
+    "Upper_Face" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face"
+    },
+    "Textual_Emotional_Cues" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Textual_Emotional_Cues"
+    },
+    "Eyes_Lower_Lid" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Lower_Lid"
+    },
+    "Skin_temperature" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature"
+    },
+    "Lips_Margins" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Margins"
+    },
+    "Brows" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows"
+    },
+    "Permanent_facial_features" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Permanent_facial_features"
+    }
+  }
+}
