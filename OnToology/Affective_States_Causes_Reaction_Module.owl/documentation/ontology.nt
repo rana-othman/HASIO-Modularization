@@ -1,0 +1,461 @@
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Causes_Reaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Causes_Reaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the  Affective States  ( Emotion , Mood, Sentiment )  Causes and Reaction \n\nIs it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/heo#ActionTendency> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/heo#ActionTendency> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "isCausedBy" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "isCausedBies" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "isCausedBied" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#appraisal
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#appraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#appraisal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#appraisal> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2001/XMLSchema#minExclusive> "-1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2001/XMLSchema#maxExclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe positive or negative values of the properties" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/2000/01/rdf-schema#range> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid30 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid30 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2001/XMLSchema#maxInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid35 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> .
+_:genid35 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
+_:genid35 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid30 .
+_:genid35 <http://www.w3.org/2000/01/rdf-schema#comment> "Duration  unit = Second" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/2000/01/rdf-schema#comment> "A mental state is a state of mind" .
+# 
+# http://purl.org/heo#ActionTendency
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isActionTendencyOf> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+<http://purl.org/heo#ActionTendency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ActionTendencies" .
+<http://purl.org/heo#ActionTendency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ActionTendency" .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2000/01/rdf-schema#comment> "Emotions have a strong influence on the motivational state of a subject. Emotion theory associates emotions to a small set of so-called action tendencies, e.g. avoidance (relates to fear), rejecting (disgust) etc. Action tendencies can be viewed as a link between the outcome of an appraisal process and actual actions." .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2000/01/rdf-schema#comment> "Import From HEO" .
+<http://purl.org/heo#ActionTendency> <http://www.w3.org/2000/01/rdf-schema#label> "Action Tendency" .
+# 
+# http://purl.org/heo#Agonistic
+<http://purl.org/heo#Agonistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Agonistic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Agonistic> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Agonistics" .
+<http://purl.org/heo#Agonistic> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Agonistic" .
+<http://purl.org/heo#Agonistic> <http://www.w3.org/2000/01/rdf-schema#comment> "Agonistic (FrijdaActionTendency ) [aimed at removal of obstruction and regaining control, related to anger]" .
+<http://purl.org/heo#Agonistic> <http://www.w3.org/2000/01/rdf-schema#label> "Agonistic" .
+# 
+# http://purl.org/heo#Approach
+<http://purl.org/heo#Approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Approach> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Approach> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Approaches" .
+<http://purl.org/heo#Approach> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Approach" .
+<http://purl.org/heo#Approach> <http://www.w3.org/2000/01/rdf-schema#comment> "Approach (FrijdaActionTendency ) [aimed towards access and consummatory activity, related to desire]" .
+<http://purl.org/heo#Approach> <http://www.w3.org/2000/01/rdf-schema#label> "Approach" .
+# 
+# http://purl.org/heo#Attending
+<http://purl.org/heo#Attending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Attending> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Attending> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Attendings" .
+<http://purl.org/heo#Attending> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Attending" .
+<http://purl.org/heo#Attending> <http://www.w3.org/2000/01/rdf-schema#comment> "Attending (FrijdaActionTendency ) [aimed at identification, related to interest]" .
+<http://purl.org/heo#Attending> <http://www.w3.org/2000/01/rdf-schema#label> "Attending" .
+# 
+# http://purl.org/heo#Avoidance
+<http://purl.org/heo#Avoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Avoidance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Avoidance> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Avoidances" .
+<http://purl.org/heo#Avoidance> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Avoidance" .
+<http://purl.org/heo#Avoidance> <http://www.w3.org/2000/01/rdf-schema#comment> "Avoidance (FrijdaActionTendency ) [aimed towards own inaccessibility and protection, related to fear]" .
+<http://purl.org/heo#Avoidance> <http://www.w3.org/2000/01/rdf-schema#label> "Avoidance" .
+# 
+# http://purl.org/heo#Being-with
+<http://purl.org/heo#Being-with> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Being-with> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Being-with> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Being-withs" .
+<http://purl.org/heo#Being-with> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Being-with" .
+<http://purl.org/heo#Being-with> <http://www.w3.org/2000/01/rdf-schema#comment> "Being with (FrijdaActionTendency ) [aimed at contact and interaction, related to enjoyment]" .
+<http://purl.org/heo#Being-with> <http://www.w3.org/2000/01/rdf-schema#label> "Being with" .
+# 
+# http://purl.org/heo#Dominating
+<http://purl.org/heo#Dominating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Dominating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Dominating> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Dominatings" .
+<http://purl.org/heo#Dominating> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Dominating" .
+<http://purl.org/heo#Dominating> <http://www.w3.org/2000/01/rdf-schema#comment> "Dominating (FrijdaActionTendency ) [aimed at retained control, related to arrogance]" .
+<http://purl.org/heo#Dominating> <http://www.w3.org/2000/01/rdf-schema#label> "Dominating" .
+# 
+# http://purl.org/heo#Frijda_Action_Tendency
+<http://purl.org/heo#Frijda_Action_Tendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Frijda_Action_Tendency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#ActionTendency> .
+<http://purl.org/heo#Frijda_Action_Tendency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "FrijdaActionTendencies" .
+<http://purl.org/heo#Frijda_Action_Tendency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "FrijdaActionTendency" .
+<http://purl.org/heo#Frijda_Action_Tendency> <http://www.w3.org/2000/01/rdf-schema#comment> "An action tendency defined by Nico Frijda, who also coined the term 'action tendency'" .
+# 
+# http://purl.org/heo#Interrupting
+<http://purl.org/heo#Interrupting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Interrupting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Interrupting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Interruptings" .
+<http://purl.org/heo#Interrupting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Interrupting" .
+<http://purl.org/heo#Interrupting> <http://www.w3.org/2000/01/rdf-schema#comment> "Interrupting (FrijdaActionTendency ) [aimed at reorientation, related to shock and surprise]" .
+<http://purl.org/heo#Interrupting> <http://www.w3.org/2000/01/rdf-schema#label> "Interrupting" .
+# 
+# http://purl.org/heo#Nonattending
+<http://purl.org/heo#Nonattending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Nonattending> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Nonattending> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Nonattendings" .
+<http://purl.org/heo#Nonattending> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Nonattending" .
+<http://purl.org/heo#Nonattending> <http://www.w3.org/2000/01/rdf-schema#comment> "Nonattending (FrijdaActionTendency ) [aimed at selecting, related to indifference]" .
+<http://purl.org/heo#Nonattending> <http://www.w3.org/2000/01/rdf-schema#label> "Nonattending" .
+# 
+# http://purl.org/heo#Rejecting
+<http://purl.org/heo#Rejecting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Rejecting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Rejecting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Rejectings" .
+<http://purl.org/heo#Rejecting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Rejecting" .
+<http://purl.org/heo#Rejecting> <http://www.w3.org/2000/01/rdf-schema#comment> "Rejecting (FrijdaActionTendency ) [aimed at removal of object, related to disgust]" .
+<http://purl.org/heo#Rejecting> <http://www.w3.org/2000/01/rdf-schema#label> "Rejecting" .
+# 
+# http://purl.org/heo#Submitting
+<http://purl.org/heo#Submitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Submitting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Frijda_Action_Tendency> .
+<http://purl.org/heo#Submitting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Submittings" .
+<http://purl.org/heo#Submitting> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Submitting" .
+<http://purl.org/heo#Submitting> <http://www.w3.org/2000/01/rdf-schema#comment> "Submitting (FrijdaActionTendency ) [aimed at deflecting pressure, related to humility and resignation]" .
+<http://purl.org/heo#Submitting> <http://www.w3.org/2000/01/rdf-schema#label> "Submitting" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Aesthetic
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Aesthetic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Aesthetic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Aesthetic> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Aesthetics" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Aesthetic> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Aesthetic" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Affective_stateses" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Affective_states" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Agencies" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Agency" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agency> <http://www.w3.org/2000/01/rdf-schema#comment> "The individual's ability to influence or cope with the consequences of the event" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Appraisals" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Appraisal" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Apprisal means emotions are elicited and differentiated on the basis of a person's subjective evaluation" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "The Defnition  from \" Appraisal Theory\" By \"Klaus R. Scherer\"" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "cognitive" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cognitive
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cognitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cognitive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cognitive> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Cognitives" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cognitive> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Cognitive" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "cotagions" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Contagion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "cotagion" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasActionTendency> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/heo#ActionTendency> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Emotion is the result of a person\u2019s exposure to an internal or external stimulus and is expressed by changes in facial expression, gesture, voice or physiological parameters" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Emotion" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Emotion_Causeses" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Emotion_Causes" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Esteem
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Esteem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Esteem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Esteem> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Esteems" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Esteem> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Esteem" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCausedBy> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Moods" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Mood" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#comment> "Mood is an emotional state that affects the experience and behavior of a person. It has a lower intensity but a longer duration than emotion" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#comment> "emotional state" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Cause> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Causes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#causes> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Novelties" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Novelty" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Novelty> <http://www.w3.org/2000/01/rdf-schema#comment> "Intrinsic characteristics of objects or events, such as novelty or agreeableness" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Physiologicals" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Physiological" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Previous_Emotion_State
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Previous_Emotion_State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Previous_Emotion_State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Previous_Emotion_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Previous_Emotion_States" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Previous_Emotion_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Previous_Emotion_State" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Saftey_and_security
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Saftey_and_security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Saftey_and_security> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Saftey_and_security> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Saftey_and_securities" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Saftey_and_security> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Saftey_and_security" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Self_actualizations" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Self_actualization" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Causes> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "a view of or attitude toward a situation or event; an opinion" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transcendence
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transcendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transcendence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transcendence> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Transcendences" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transcendence> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Transcendence" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Goals/needs" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Goals/needs" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs> <http://www.w3.org/2000/01/rdf-schema#comment> "The significance of the event for the individual's needs or goals" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Appraisal> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Norms/Values" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Norms/Values" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Norms/Values> <http://www.w3.org/2000/01/rdf-schema#comment> "The compatibility of the event with social or personal standards, norms, or values." .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
