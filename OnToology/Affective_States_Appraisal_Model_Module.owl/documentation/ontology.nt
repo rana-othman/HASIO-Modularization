@@ -1,0 +1,318 @@
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Appraisal_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Appraisal_Model> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Appraisal_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Appraisal_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the  Affective States  ( Emotion , Mood, Sentiment )  Apprisal Model\n\nIs it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/heo#Appraisal_Model> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/heo#Appraisal_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid15 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid15 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2001/XMLSchema#maxInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid20 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> .
+_:genid20 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
+_:genid20 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid15 .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#comment> "Duration  unit = Second" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> <http://www.w3.org/2000/01/rdf-schema#comment> "A mental state is a state of mind" .
+# 
+# http://purl.org/heo#Appraisal_Model
+<http://purl.org/heo#Appraisal_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Appraisal_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> .
+<http://purl.org/heo#Appraisal_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isAppraisalOf> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#Appraisal_Model> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Appraisals" .
+<http://purl.org/heo#Appraisal_Model> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Appraisal" .
+<http://purl.org/heo#Appraisal_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "The term \"appraisal\" is used in the scientific literature to describe the evaluation process leading to an emotional response. Triggered by an \"emotion-eliciting event\", an individual carries out an automatic, subjective assessment of the event, in order to determine the relevance of the event to the individual. This assessment is carried out along a number of \"appraisal dimensions\" such as the novelty, pleasantness or goal conduciveness of the event." .
+<http://purl.org/heo#Appraisal_Model> <http://www.w3.org/2000/01/rdf-schema#label> "Appraisal_Model - Componential  Model-" .
+# 
+# http://purl.org/heo#OCCAppraisalAppealingness
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalAppealingnesses" .
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalAppealingness" .
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://www.w3.org/2000/01/rdf-schema#comment> "Appealingness (OCCAppraisal)  [relevant for attraction emotions. (liking/disliking)]" .
+<http://purl.org/heo#OCCAppraisalAppealingness> <http://www.w3.org/2000/01/rdf-schema#label> "Appealingness" .
+# 
+# http://purl.org/heo#OCCAppraisalDeservingness
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalDeservingnesses" .
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalDeservingness" .
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://www.w3.org/2000/01/rdf-schema#comment> "Deservingness (OCCAppraisal)  [related to fortunes of others. Whether the other \u201Cdeserves\u201D the event.]" .
+<http://purl.org/heo#OCCAppraisalDeservingness> <http://www.w3.org/2000/01/rdf-schema#label> "Deservingness" .
+# 
+# http://purl.org/heo#OCCAppraisalDesirability
+<http://purl.org/heo#OCCAppraisalDesirability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalDesirability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalDesirability> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalDesirabilities" .
+<http://purl.org/heo#OCCAppraisalDesirability> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalDesirability" .
+<http://purl.org/heo#OCCAppraisalDesirability> <http://www.w3.org/2000/01/rdf-schema#comment> "Desirability (OCCAppraisal)  [relevant for event based emotions. (pleased/displeased)]" .
+<http://purl.org/heo#OCCAppraisalDesirability> <http://www.w3.org/2000/01/rdf-schema#label> "Desirability" .
+# 
+# http://purl.org/heo#OCCAppraisalDesirability-for-other
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalDesirability-for-others" .
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalDesirability-for-other" .
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://www.w3.org/2000/01/rdf-schema#comment> "Desirability-for-other (OCCAppraisal)  [related to fortunes of others. Whether the event is desirable for the other.]" .
+<http://purl.org/heo#OCCAppraisalDesirability-for-other> <http://www.w3.org/2000/01/rdf-schema#label> "Desirability for other" .
+# 
+# http://purl.org/heo#OCCAppraisalEffort
+<http://purl.org/heo#OCCAppraisalEffort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalEffort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalEffort> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/heo#OCCAppraisalStrength-of-identification> .
+<http://purl.org/heo#OCCAppraisalEffort> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalEfforts" .
+<http://purl.org/heo#OCCAppraisalEffort> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalEffort" .
+<http://purl.org/heo#OCCAppraisalEffort> <http://www.w3.org/2000/01/rdf-schema#comment> "Effort (OCCAppraisal)  [relevant for prospect emotions. How much effort the individual invested in the outcome.]" .
+<http://purl.org/heo#OCCAppraisalEffort> <http://www.w3.org/2000/01/rdf-schema#label> "Effort" .
+# 
+# http://purl.org/heo#OCCAppraisalExpectation-of-deviation
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalExpectation-of-deviations" .
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalExpectation-of-deviation" .
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://www.w3.org/2000/01/rdf-schema#comment> "Expectation-of-deviation (OCCAppraisal)  [relevant for attribution emotions. Distinguishes whether the other is expected to act in the manner deserving of admiration or reproach. These distinguish b between: pride, shame, admiration, reproach.]" .
+<http://purl.org/heo#OCCAppraisalExpectation-of-deviation> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation of deviation" .
+# 
+# http://purl.org/heo#OCCAppraisalFamiliarity
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalFamiliarities" .
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalFamiliarity" .
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://www.w3.org/2000/01/rdf-schema#comment> "Familiarity (OCCAppraisal)  [relevant for attraction emotions. (love/hate)]" .
+<http://purl.org/heo#OCCAppraisalFamiliarity> <http://www.w3.org/2000/01/rdf-schema#label> "Familiarity" .
+# 
+# http://purl.org/heo#OCCAppraisalLikelihood
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalLikelihoods" .
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalLikelihood" .
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://www.w3.org/2000/01/rdf-schema#comment> "Likelihood (OCCAppraisal)  [relevant for prospect emotions. (hope/fear)]" .
+<http://purl.org/heo#OCCAppraisalLikelihood> <http://www.w3.org/2000/01/rdf-schema#label> "Likelihood" .
+# 
+# http://purl.org/heo#OCCAppraisalLiking
+<http://purl.org/heo#OCCAppraisalLiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalLiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalLiking> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalLikings" .
+<http://purl.org/heo#OCCAppraisalLiking> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalLiking" .
+<http://purl.org/heo#OCCAppraisalLiking> <http://www.w3.org/2000/01/rdf-schema#comment> "Liking (OCCAppraisal)  [related to fortunes of others. Whether the other is liked or not. These distinguish between: happy-for, pity, gloating (schadenfreude), and resentment.]" .
+<http://purl.org/heo#OCCAppraisalLiking> <http://www.w3.org/2000/01/rdf-schema#label> "Liking" .
+# 
+# http://purl.org/heo#OCCAppraisalPraiseworthiness
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalPraiseworthinesses" .
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalPraiseworthiness" .
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Praiseworthiness (OCCAppraisal)  [relevant for attribution emotions. (approving/disapproving)]" .
+<http://purl.org/heo#OCCAppraisalPraiseworthiness> <http://www.w3.org/2000/01/rdf-schema#label> "Praiseworthiness" .
+# 
+# http://purl.org/heo#OCCAppraisalRealization
+<http://purl.org/heo#OCCAppraisalRealization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalRealization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalRealization> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalRealizations" .
+<http://purl.org/heo#OCCAppraisalRealization> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalRealization" .
+<http://purl.org/heo#OCCAppraisalRealization> <http://www.w3.org/2000/01/rdf-schema#comment> "Realization (OCCAppraisal)  [relevant for prospect emotions. The actual resulting outcome. These distinguish between: relief, disappointment, satisfaction, and fears-confirmed.]" .
+<http://purl.org/heo#OCCAppraisalRealization> <http://www.w3.org/2000/01/rdf-schema#label> "Realization" .
+# 
+# http://purl.org/heo#OCCAppraisalStrength-of-identification
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#OCC_Appraisal> .
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "OCCAppraisalStrength-of-identifications" .
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisalStrength-of-identification" .
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://www.w3.org/2000/01/rdf-schema#comment> "Strength-of-identification (OCCAppraisal)  [relevant for attribution emotions. The stronger one identifies with the other, that distinguishes between whether pride or admiration is felt.]" .
+<http://purl.org/heo#OCCAppraisalStrength-of-identification> <http://www.w3.org/2000/01/rdf-schema#label> "Strength of identification" .
+# 
+# http://purl.org/heo#OCC_Appraisal
+<http://purl.org/heo#OCC_Appraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/heo#OCC_Appraisal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/heo#Appraisal_Model> .
+<http://purl.org/heo#OCC_Appraisal> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "OCCAppraisal" .
+<http://purl.org/heo#OCC_Appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Import From HEO" .
+<http://purl.org/heo#OCC_Appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Propsed by Ortony, Clore & Collins" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Affective_stateses" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Affective_states" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Mapping discreet Emotion into Circumplex model is based on \n\"a circumplex model of affect. journal of personality and social psychology\"\n" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Mapping discreet emotions to PAD Mode in SWRL  is based on\n \"Are computer-generated emotions and moods plausible to humans?\"\n\"Analysis of the Big-five Personality Factors in Terms of the PAD Temperament Model\"\n" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> <http://www.w3.org/2000/01/rdf-schema#comment> "physiological  Theories for : Emotion , Mood, and Sentiment." .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/heo#Appraisal_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Emotion is the result of a person\u2019s exposure to an internal or external stimulus and is expressed by changes in facial expression, gesture, voice or physiological parameters" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Emotion" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasAppraisal> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/heo#Appraisal_Model> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Moods" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Mood" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#comment> "Mood is an emotional state that affects the experience and behavior of a person. It has a lower intensity but a longer duration than emotion" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> <http://www.w3.org/2000/01/rdf-schema#comment> "emotional state" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
