@@ -1,0 +1,217 @@
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Influence_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Influence_Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the  Influence ( Need, Personality, Subjective well-Being)  Recognition Method \n\nIs it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Ways to detect or recognize Influences" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> <http://www.w3.org/2000/01/rdf-schema#comment> "Human Needs are necessities for the development of physical and mental growth of individuals" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Need> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Personalities" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Personality" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> <http://www.w3.org/2000/01/rdf-schema#comment> "Personality is defined as an individual pattern of affect, behavior, cognition and goals over time and space" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Personality_Recognitions" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Personality_Recognition" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Needs_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Personality_Recognition> .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to how people experience the quality of their lives" .
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Influence_Recognition> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_Well_Being> .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Subjective_well_Being_Recognitions" .
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Subjective_well_Being_Recognition> <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Subjective_well_Being_Recognition" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/rabaa006/ontologies/2017/10/untitled-ontology-320#Twitter
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/untitled-ontology-320#Twitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/untitled-ontology-320#Twitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

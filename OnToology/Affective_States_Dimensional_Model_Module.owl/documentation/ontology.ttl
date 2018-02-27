@@ -1,0 +1,314 @@
+@prefix : <http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Dimensional_Model#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Dimensional_Model> .
+
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Affective_States_Dimensional_Model> rdf:type owl:Ontology ;
+                                                                                             rdfs:comment """Ontology for the  Affective States  ( Emotion , Mood, Sentiment )  Dimesional Models
+
+Is it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)"""^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> rdf:type owl:AnnotationProperty .
+
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDimension
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDimension> rdf:type owl:ObjectProperty ;
+                                                                           owl:inverseOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf> ;
+                                                                           rdf:type owl:AsymmetricProperty ;
+                                                                           rdfs:domain [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                       <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood>
+                                                                                                     )
+                                                                                       ] ;
+                                                                           rdfs:range <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State>
+                                                                                                      <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                      <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood>
+                                                                                                    )
+                                                                                      ] ;
+                                                                          rdfs:range [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> ;
+                                                                                       owl:someValuesFrom xsd:anyURI
+                                                                                     ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> rdf:type owl:ObjectProperty ;
+                                                                       owl:inverseOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> ;
+                                                                       rdf:type owl:AsymmetricProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> ;
+                                                                       rdfs:range <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasValue
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasValue> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model>
+                                                                                                   <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model>
+                                                                                                   <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model>
+                                                                                                   <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model>
+                                                                                                 )
+                                                                                   ] ;
+                                                                       rdfs:range [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#coordinates> ;
+                                                                                    owl:someValuesFrom xsd:anyURI
+                                                                                  ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf> rdf:type owl:ObjectProperty ,
+                                                                                     owl:AsymmetricProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> ;
+                                                                            rdfs:range [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                       <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood>
+                                                                                                     )
+                                                                                       ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> rdf:type owl:ObjectProperty ,
+                                                                                  owl:AsymmetricProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> ;
+                                                                         rdfs:range <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#coordinates
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#coordinates> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model>
+                                                                                                      <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model>
+                                                                                                      <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model>
+                                                                                                      <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model>
+                                                                                                    )
+                                                                                      ] ;
+                                                                          rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:integer ;
+                                                                                       owl:withRestrictions ( [ xsd:minExclusive 1
+                                                                                                              ]
+                                                                                                              [ xsd:maxExclusive -1
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                   <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood>
+                                                                                                 )
+                                                                                   ] ;
+                                                                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                    owl:onDatatype xsd:decimal ;
+                                                                                    owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                           ]
+                                                                                                           [ xsd:maxInclusive 100
+                                                                                                           ]
+                                                                                                         )
+                                                                                  ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget [ rdf:type rdfs:Datatype ;
+                         owl:onDatatype xsd:decimal ;
+                         owl:withRestrictions ( [ xsd:minInclusive 0
+                                                ]
+                                                [ xsd:maxInclusive 100
+                                                ]
+                                              )
+                       ] ;
+   rdfs:comment "Duration  unit = Second"^^xsd:string
+ ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf owl:Thing ;
+                                                                         rdfs:comment "A mental state is a state of mind"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel> ;
+                                                                                                owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model>
+                                                                                              ] ;
+                                                                              <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Affective_stateses"^^xsd:string ;
+                                                                              <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Affective_states"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf [ owl:intersectionOf ( owl:Thing
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor> ;
+                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State>
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ] ;
+                                                                                    rdfs:comment """Mapping discreet Emotion into Circumplex model is based on 
+\"a circumplex model of affect. journal of personality and social psychology\"
+"""^^xsd:string ,
+                                                                                                 """Mapping discreet emotions to PAD Mode in SWRL  is based on
+ \"Are computer-generated emotions and moods plausible to humans?\"
+\"Analysis of the Big-five Personality Factors in Terms of the PAD Temperament Model\"
+"""^^xsd:string ,
+                                                                                                 "physiological  Theories for : Emotion , Mood, and Sentiment."^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> ;
+                                                                               owl:disjointWith <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Circumplex_models"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Circumplex_model"^^xsd:string ;
+                                                                               rdfs:comment "The Circumplex Model of Emotion was Developed by James Russell"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model> ,
+                                                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                                       ]
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood>
+                                                                                                                       ]
+                                                                                                                     ) ;
+                                                                                                  rdf:type owl:Class
+                                                                                                ] ;
+                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Dimensional_Emotional_Models"^^xsd:string ;
+                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Dimensional_Emotional_Model"^^xsd:string ;
+                                                                                rdfs:comment "Dimensional models of emotion try to visualize human emotions by represent them by two or three dimensions"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDimension> ;
+                                                                                        owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model>
+                                                                                      ] ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Emotion is the result of a person’s exposure to an internal or external stimulus and is expressed by changes in facial expression, gesture, voice or physiological parameters"^^xsd:string ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Emotion"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> ;
+                                                                             owl:disjointWith <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> ;
+                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Fontaine_Models"^^xsd:string ;
+                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Fontaine_Model"^^xsd:string ;
+                                                                             rdfs:comment "Propsed by  Fontaine, Scherer, Roesch and Ellsworth "^^xsd:string ;
+                                                                             rdfs:isDefinedBy "http://www.w3.org/TR/2011/WD-emotion-voc-20110407/xml"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDimension> ;
+                                                                                     owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model>
+                                                                                   ] ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Moods"^^xsd:string ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Mood"^^xsd:string ;
+                                                                   rdfs:comment "Mood is an emotional state that affects the experience and behavior of a person. It has a lower intensity but a longer duration than emotion"^^xsd:string ,
+                                                                                "emotional state"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> ;
+                                                                        owl:disjointWith <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> ;
+                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PAD_mood_spaces"^^xsd:string ;
+                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PAD_mood_space"^^xsd:string ;
+                                                                        rdfs:comment "The PAD Emotional Model Was  developed by Albert Mehrabian and James"^^xsd:string ;
+                                                                        rdfs:isDefinedBy "http://www.w3.org/TR/2011/WD-emotion-voc-20110407/xml"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model> ;
+                                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Watson_and_Tellegan_Models"^^xsd:string ;
+                                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Watson_and_Tellegan_Model"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Arousal
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Arousal> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model> ,
+                                                                               <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model> ,
+                                                                               <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dominance
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dominance> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model> ,
+                                                                                 <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative_Affect
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative_Affect> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pleasure
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pleasure> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Positive_Affect
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Positive_Affect> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Unpredictability
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Unpredictability> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#valence
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#valence> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model> ,
+                                                                               <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

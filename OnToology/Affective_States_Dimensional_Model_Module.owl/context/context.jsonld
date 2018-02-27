@@ -1,0 +1,79 @@
+{
+  "@context" : {
+    "hasModel" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel",
+      "@type" : "@id"
+    },
+    "Watson_and_Tellegan_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Watson_and_Tellegan_Model"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Emotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion"
+    },
+    "hasValue" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasValue",
+      "@type" : "@id"
+    },
+    "Fontaine_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fontaine_Model"
+    },
+    "coordinates" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#coordinates"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration",
+      "@type" : "@id"
+    },
+    "Affective_State_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model"
+    },
+    "Affective_State" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State"
+    },
+    "Circumplex_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Circumplex_Model"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Mental-State" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State"
+    },
+    "duration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration"
+    },
+    "isDimensionOf" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDimensionOf",
+      "@type" : "@id"
+    },
+    "Mood" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood"
+    },
+    "Dimensional_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Dimensional_Model"
+    },
+    "PAD_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#PAD_Model"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasDimension" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDimension",
+      "@type" : "@id"
+    },
+    "isModelFor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor",
+      "@type" : "@id"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    }
+  }
+}

@@ -1,0 +1,619 @@
+@prefix : <http://www.semanticweb.org/rabaa006/ontologies/2017/10/Emotion_Expression_Cues#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/rabaa006/ontologies/2017/10/Emotion_Expression_Cues> .
+
+<http://www.semanticweb.org/rabaa006/ontologies/2017/10/Emotion_Expression_Cues> rdf:type owl:Ontology ;
+                                                                                  rdfs:comment """Ontology for Emotion Expression Cues 
+
+Is it a  sub-ontology from  Human Affective States and their influences Ontology(HASIO)"""^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> rdf:type owl:AnnotationProperty .
+
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> rdf:type owl:AnnotationProperty .
+
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> rdf:type owl:AnnotationProperty .
+
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> rdf:type owl:AnnotationProperty .
+
+
+###  http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg
+<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#express
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#express> rdf:type owl:ObjectProperty ;
+                                                                      owl:inverseOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isExpressedThrough> ;
+                                                                      rdf:type owl:AsymmetricProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> ;
+                                                                      rdfs:range <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> ;
+                                                                          rdfs:range [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> ;
+                                                                                       owl:someValuesFrom xsd:anyURI
+                                                                                     ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isExpressedThrough
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isExpressedThrough> rdf:type owl:ObjectProperty ,
+                                                                                          owl:AsymmetricProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "isRecognizedBy"^^xsd:string ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "isRecognizedBies"^^xsd:string ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "isRecognizedBied"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure> ;
+                                                                                     rdfs:range xsd:int ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Blood_Pressures"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Blood_Pressure"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Blood_Pressure"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Blood_Pressures"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Blood_Pressured"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_potentials_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_potentials_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_Potentials> ;
+                                                                                       rdfs:range xsd:double ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Brain_potentials_value"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Brain_potentials_values"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Brain_potentials_valued"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography> ;
+                                                                                             rdfs:range xsd:double ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Electroencephalographies"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Electroencephalography"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Electroencephalography_value"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Electroencephalography_values"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Electroencephalography_valued"^^xsd:string ;
+                                                                                             rdfs:comment "Activity in the  brain"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram> ;
+                                                                                     rdfs:range xsd:double ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Electromyograms"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Electromyogram"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Electromyogram"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Electromyograms"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Electromyogramed"^^xsd:string ;
+                                                                                     rdfs:comment "Activity of muscles"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements> ;
+                                                                                    rdfs:range xsd:int ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Eye_Movementses"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Eye_Movements"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Eye_Movements"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Eye_Movementses"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Eye_Movementsed"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability> ;
+                                                                                             rdfs:range xsd:int ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Heart_Rate_Variabilities"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Heart_Rate_Variability"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Heart_Rate_Variability_value"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Heart_Rate_Variability_values"^^xsd:string ;
+                                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Heart_Rate_Variability_valued"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter> ;
+                                                                                     rdfs:range owl:real ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Pupil_Diameters"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Pupil_Diameter"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Pupil_Diameter"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Pupil_Diameters"^^xsd:string ;
+                                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Pupil_Diametered"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration> ;
+                                                                                  rdfs:range xsd:int ;
+                                                                                  <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Respirations"^^xsd:string ;
+                                                                                  <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Respiration"^^xsd:string ;
+                                                                                  <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Respiration_value"^^xsd:string ;
+                                                                                  <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Respiration_values"^^xsd:string ;
+                                                                                  <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Respiration_valued"^^xsd:string ;
+                                                                                  rdfs:comment "Breathing."^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                                rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response> ;
+                                                                                                rdfs:range xsd:double ;
+                                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Skin_conductance_Responses"^^xsd:string ;
+                                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Skin_conductance_Response"^^xsd:string ;
+                                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Skin_conductance_Response_value"^^xsd:string ;
+                                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Skin_conductance_Response_values"^^xsd:string ;
+                                                                                                <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Skin_conductance_Response_valued"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature_Reading
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature_Reading> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature> ;
+                                                                                       rdfs:range xsd:double ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Skin_temperatures"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Skin_temperature"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Skin_temperature"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Skin_temperatures"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Skin_temperatured"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> ;
+                                                                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                    owl:onDatatype xsd:decimal ;
+                                                                                    owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                           ]
+                                                                                                           [ xsd:maxInclusive 100
+                                                                                                           ]
+                                                                                                         )
+                                                                                  ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration> ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget [ rdf:type rdfs:Datatype ;
+                         owl:onDatatype xsd:decimal ;
+                         owl:withRestrictions ( [ xsd:minInclusive 0
+                                                ]
+                                                [ xsd:maxInclusive 100
+                                                ]
+                                              )
+                       ] ;
+   rdfs:comment "Duration  unit = Second"^^xsd:string
+ ] .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#durationOfPauses
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#durationOfPauses> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                               rdfs:range owl:real ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Duration_of_Pauseses"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Duration_of_Pauses"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "Duration_of_Pauses_Value"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "Duration_of_Pauses_Values"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "Duration_of_Pauses_Valued"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#level
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#level> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                    rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#loudness
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#loudness> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                       rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#range
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#range> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                    rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                    rdfs:range xsd:int ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Ranges"^^xsd:string ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Range"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#stressDistribution
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#stressDistribution> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                                 rdfs:range xsd:int ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "stress_distribution_Value"^^xsd:string ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "stress_distribution_Values"^^xsd:string ;
+                                                                                 <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "stress_distribution_Valued"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#tempo
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#tempo> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                    rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                    rdfs:range xsd:int ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Tempoes"^^xsd:string ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Tempo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#variability
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#variability> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech> ;
+                                                                          rdfs:domain <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> ;
+                                                                          rdfs:range xsd:int ;
+                                                                          <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "variabilities"^^xsd:string ;
+                                                                          <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "variability"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State
+<http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf owl:Thing ;
+                                                                         rdfs:comment "A mental state is a state of mind"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Abdominal
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Abdominal> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State> ;
+                                                                              <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Affective_stateses"^^xsd:string ;
+                                                                              <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Affective_states"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Arms
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Arms> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Pressure> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_Potentials
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brain_Potentials> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Brain_Potentialses"^^xsd:string ;
+                                                                               <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Brain_Potentials"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face> ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Browses"^^xsd:string ;
+                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Brows"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Entire
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Entire> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Inner_Corners
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows_Inner_Corners> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Brows> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cheeks
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Cheeks> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face> ;
+                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Cheekses"^^xsd:string ;
+                                                                     <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Cheeks"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chest
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chest> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chin
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Chin> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face> ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Chins"^^xsd:string ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Chin"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Collapsed_Posture
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Collapsed_Posture> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Expressives"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Expressive"^^xsd:string ;
+                                                                                       rdfs:comment "Behavioural Emotional Cues"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electroencephalography> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyogram> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State> ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isExpressedThrough> ;
+                                                                                        owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue>
+                                                                                      ] ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Emotion is the result of a person’s exposure to an internal or external stimulus and is expressed by changes in facial expression, gesture, voice or physiological parameters"^^xsd:string ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Emotion"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf [ owl:intersectionOf ( owl:Thing
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#express> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion>
+                                                                                                                              ]
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ] ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Expression_Systemses"^^xsd:string ;
+                                                                                       <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Expression_Systems"^^xsd:string ;
+                                                                                       rdfs:comment "Ways to express Emotion"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Expanded_Posture
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Expanded_Posture> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eye_Movements> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face> ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Eyeses"^^xsd:string ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Eyes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Crown_feet
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Crown_feet> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Eyelids
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Eyelids> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Lower_Lid
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Lower_Lid> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Muscle
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Muscle> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Upper_Lid
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes_Upper_Lid> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Eyes> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_Furrows
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_Furrows> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transient_facial__features> ;
+                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Facial_Furrowses"^^xsd:string ;
+                                                                             <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Facial_Furrows"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_emotional_cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_emotional_cues> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues> ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Facicals"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Facical"^^xsd:string ;
+                                                                                    rdfs:comment """Facial emotion cues in SWRL based on
+ Ekman and W. Friesen, Facial Action Coding System: A Technique for the Measurement of Facial Movement. Consulting Psychologists Press, Palo Alto, CA, 1978.
+"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Forhead
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Forhead> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face> ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Forheads"^^xsd:string ;
+                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Forhead"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues> ;
+                                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Posturals"^^xsd:string ;
+                                                                                      <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Postural"^^xsd:string ;
+                                                                                      rdfs:comment """Emotion Gestural posture in SWRL  taken from \"Expressing emotion through posture and gesture\"
+This paper compiles data from various studies (Walters and Walk, reported in Coulson 2004; Atkinson et al. 2004; Wallbott 1998)."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Hands
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Hands> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Head
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Head> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Variability> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face> ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Lipses"^^xsd:string ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Lips"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Corner
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Corner> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Margins
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Margins> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Upper
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips_Upper> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lips> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Permanent_facial_features> ;
+                                                                          <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Lower__Faces"^^xsd:string ;
+                                                                          <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Lower__Face"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mouth
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mouth> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Nose
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Nose> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Lower__Face> ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Noses"^^xsd:string ;
+                                                                   <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Nose"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Permanent_facial_features
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Permanent_facial_features> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_emotional_cues> ;
+                                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Permanent_facial_featureses"^^xsd:string ;
+                                                                                        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Permanent_facial_features"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> ;
+                                                                                           <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Physiological_Changeses"^^xsd:string ;
+                                                                                           <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Physiological_Changes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Pupil_Diameter> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Shoulders
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Shoulders> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestural_emotional_cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_conductance_Response> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_temperature> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Speech_emotional_cues> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues> ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Speech_(Vocal)"^^xsd:string ;
+                                                                                    <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Speech_(Vocal)"^^xsd:string ;
+                                                                                    rdfs:comment "Speech Parameters"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Textual_Emotional_Cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Textual_Emotional_Cues> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transient_facial__features
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Transient_facial__features> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_emotional_cues> ;
+                                                                                         <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Transient_facial__featureses"^^xsd:string ;
+                                                                                         <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Transient_facial__features"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Upper_Face> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Permanent_facial_features> ;
+                                                                         <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Upper_Faces"^^xsd:string ;
+                                                                         <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Upper_Face"^^xsd:string .
+
+
+###  http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Verabl_Eomtional_Cues
+<http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Verabl_Eomtional_Cues> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotional_Expression_Cue> ;
+                                                                                    rdfs:comment "The Vocabulary Used in Speech"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Conductal_Emotional_Cues>
+                <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Emotional_Cues>
+                <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Textual_Emotional_Cues>
+                <http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Verabl_Eomtional_Cues>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
