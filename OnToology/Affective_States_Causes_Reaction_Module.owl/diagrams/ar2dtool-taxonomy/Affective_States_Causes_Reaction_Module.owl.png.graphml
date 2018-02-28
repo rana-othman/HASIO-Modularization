@@ -76,19 +76,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-7da5bf3f:161d83b609d:-7fd2">
+      <node id="nid_39afb570:161d8554978:-7fd2">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-7da5bf3f:161d83b609d:-7fd2</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">39afb570:161d8554978:-7fd2</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion" target="nid_-7da5bf3f:161d83b609d:-7fd2">
+    <edge id="eid_rdfs:subClassOf2" source="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion" target="nid_39afb570:161d8554978:-7fd2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -581,19 +581,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization">
+      <node id="nid_http://purl.org/heo#Being-with">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="780.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/heo#Being-with</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization" target="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs">
+    <edge id="eid_rdfs:subClassOf25" source="nid_http://purl.org/heo#Being-with" target="nid_http://purl.org/heo#Frijda_Action_Tendency">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -707,19 +707,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://purl.org/heo#Being-with">
+      <node id="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="780.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/heo#Being-with</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf31" source="nid_http://purl.org/heo#Being-with" target="nid_http://purl.org/heo#Frijda_Action_Tendency">
+    <edge id="eid_rdfs:subClassOf31" source="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Self_actualization" target="nid_http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Goals/needs">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

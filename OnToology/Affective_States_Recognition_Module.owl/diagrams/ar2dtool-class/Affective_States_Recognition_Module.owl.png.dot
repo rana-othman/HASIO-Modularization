@@ -1,0 +1,52 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "-17715ba:161d8583b92:-7fed" ":Voice_Recognition" ":Sentiment" "-17715ba:161d8583b92:-7ffc" ":Emotion" ":Mood" ":Affective_State" ":Emotion_Recognition" "-17715ba:161d8583b92:-7ff2" ":Facial_Recognition" "-17715ba:161d8583b92:-7ff7" ":Gestures_Recognition" ":Mood_Recognition" ":Sentiment_Recognition" ":Affective_State_Recognition" ; /*classes style*/
+	"NULL" -> "-17715ba:161d8583b92:-7fec" [ label = "owl:unionOf" ];
+	"NULL" -> ":Sentiment_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fe4" [ label = "rdf:rest" ];
+	"NULL" -> ":Voice_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> ":Mood_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff1" [ label = "owl:unionOf" ];
+	"NULL" -> ":Emotion_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fdb" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> ":Emotion_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> ":Facial_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> ":isDetectedFrom" [ label = "owl:onProperty" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> ":Mood" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff0" [ label = "rdf:rest" ];
+	"NULL" -> ":Emotion" [ label = "rdf:first" ];
+	"NULL" -> ":Sentiment" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fe6" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fda" [ label = "rdf:rest" ];
+	"NULL" -> ":isSourceToDetect" [ label = "owl:onProperty" ];
+	"NULL" -> "owl:Thing" [ label = "rdf:first" ];
+	"NULL" -> ":Emotion" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":Affective_State_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":Affective_State" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff6" [ label = "owl:unionOf" ];
+	"NULL" -> ":Mood_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> ":Gestures_Recognition" [ label = "rdf:first" ];
+	"NULL" -> ":Sentiment_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fdc" [ label = "owl:members" ];
+	"NULL" -> ":Mood" [ label = "rdf:first" ];
+	"NULL" -> ":Affective_State_Recognition" [ label = "rdf:first" ];
+	"NULL" -> ":Affective_State" [ label = "rdf:first" ];
+	"NULL" -> ":Sentiment" [ label = "rdf:first" ];
+	"NULL" -> "-17715ba:161d8583b92:-7fef" [ label = "rdf:rest" ];
+	"-17715ba:161d8583b92:-7ffc" -> "-17715ba:161d8583b92:-7ff7" [ label = ":isDetectedFrom" ];
+	"-17715ba:161d8583b92:-7ff2" -> "-17715ba:161d8583b92:-7fed" [ label = ":isSourceToDetect" ];
+
+}
