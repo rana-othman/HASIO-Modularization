@@ -1,0 +1,120 @@
+{
+  "@context" : {
+    "Neurological_Response_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Neurological_Response_Sensor"
+    },
+    "isSourceToDetect" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isSourceToDetect",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Skin_Temperature_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_Temperature_Sensor"
+    },
+    "Still_Image" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Still_Image"
+    },
+    "Mobile_Device" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mobile_Device"
+    },
+    "Emotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion"
+    },
+    "Sentiment" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment"
+    },
+    "Skin_Conductance_Response_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_Conductance_Response_Sensor"
+    },
+    "Blood_Volume_Pulse_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Blood_Volume_Pulse_Sensor"
+    },
+    "Smart_Phone" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Smart_Phone"
+    },
+    "Gestures_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Gestures_Recognition"
+    },
+    "Emotion_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion_Recognition"
+    },
+    "Physiological_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Physiological_Sensor"
+    },
+    "Recorded_Video" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Recorded_Video"
+    },
+    "Heart_Rate_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Heart_Rate_Sensor"
+    },
+    "Affective_State" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State"
+    },
+    "Skin_Conductivity_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Skin_Conductivity_Sensor"
+    },
+    "Mobile_Brainwave_Sensors" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mobile_Brainwave_Sensors"
+    },
+    "Facial_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Facial_Recognition"
+    },
+    "Mental-State" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State"
+    },
+    "isDetectedFrom" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isDetectedFrom",
+      "@type" : "@id"
+    },
+    "Mood_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood_Recognition"
+    },
+    "Affective_State_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Recognition"
+    },
+    "Respiration_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Respiration_Sensor"
+    },
+    "Mood" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood"
+    },
+    "Electrocardiogram_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electrocardiogram_Sensor"
+    },
+    "Social_Media" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Media"
+    },
+    "Surveillance_Camera" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Surveillance_Camera"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Sentiment_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment_Recognition"
+    },
+    "Haptic-Devices" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Haptic-Devices"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    },
+    "Voice_Recognition" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Voice_Recognition"
+    },
+    "Electromyography_Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Electromyography_Sensor"
+    },
+    "Sensor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sensor"
+    },
+    "recorded_Voice" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#recorded_Voice"
+    }
+  }
+}

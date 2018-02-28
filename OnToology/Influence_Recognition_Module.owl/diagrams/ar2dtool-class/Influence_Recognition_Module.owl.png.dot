@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":Personality" ":Need" "-2400a0ed:161d8596834:-7ff2" ":Needs_Recognition" "-2400a0ed:161d8596834:-7ff7" ":Subjective_Well_Being" ":Subjective_well_Being_Recognition" ":Personality_Recognition" "-2400a0ed:161d8596834:-7ffc" ":Influence" ":Smart_Phone" ":Social_Media" "-2400a0ed:161d8596834:-7fed" ":Influence_Recognition" ; /*classes style*/
+	"NULL" -> ":Personality_Recognition" [ label = "rdf:first" ];
+	"NULL" -> ":Personality" [ label = "rdf:first" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> ":Subjective_Well_Being" [ label = "rdf:first" ];
+	"NULL" -> ":Personality_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fec" [ label = "owl:unionOf" ];
+	"NULL" -> ":Need" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> ":Influence" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> ":Influence_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff0" [ label = "rdf:rest" ];
+	"NULL" -> ":Personality" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":Needs_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff1" [ label = "owl:unionOf" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fe5" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> ":isDetectedFrom" [ label = "owl:onProperty" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> ":Subjective_well_Being_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> ":isSourceToDetect" [ label = "owl:onProperty" ];
+	"NULL" -> ":Need" [ label = "rdf:first" ];
+	"NULL" -> "owl:Thing" [ label = "rdf:first" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fe3" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> ":Subjective_well_Being_Recognition" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":Influence" [ label = "rdf:first" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff6" [ label = "owl:unionOf" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fe1" [ label = "rdf:rest" ];
+	"NULL" -> ":Needs_Recognition" [ label = "rdf:first" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "-2400a0ed:161d8596834:-7fe7" [ label = "owl:intersectionOf" ];
+	"NULL" -> ":Subjective_Well_Being" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":Influence_Recognition" [ label = "rdf:first" ];
+	":Smart_Phone" -> ":Social_Media" [ label = "owl:disjointWith" ];
+	"-2400a0ed:161d8596834:-7ffc" -> "-2400a0ed:161d8596834:-7ff7" [ label = ":isDetectedFrom" ];
+	"-2400a0ed:161d8596834:-7ff2" -> "-2400a0ed:161d8596834:-7fed" [ label = ":isSourceToDetect" ];
+
+}
