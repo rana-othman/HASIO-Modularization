@@ -1,0 +1,174 @@
+{
+  "@context" : {
+    "Agitation_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Agitation_DC"
+    },
+    "intensity" : {
+      "@id" : "http://purl.org/heo#intensity"
+    },
+    "Negative_Thoughts_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative_Thoughts_DC"
+    },
+    "Inadequateness_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Inadequateness_Drummond"
+    },
+    "hasModel" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasModel",
+      "@type" : "@id"
+    },
+    "Drummond_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Drummond_Category"
+    },
+    "Basic_Emotion_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Basic_Emotion_Category"
+    },
+    "Douglas-Cowie_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Douglas-Cowie_Category"
+    },
+    "Discrete_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Discrete_Model"
+    },
+    "isLevelOf" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isLevelOf",
+      "@type" : "@id"
+    },
+    "Hurt_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Hurt_Drummond"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "associated_Mood" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#associated_Mood"
+    },
+    "Discrete_Emotional_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Discrete_Emotional_Model",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Negative_passive_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative_passive_DC"
+    },
+    "Remorse_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Remorse_Drummond"
+    },
+    "Emotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Emotion"
+    },
+    "OCC_Emotion_Category" : {
+      "@id" : "http://purl.org/heo#OCC_Emotion_Category"
+    },
+    "Sentiment" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Sentiment"
+    },
+    "Quiet_Positive_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Quiet_Positive_DC"
+    },
+    "Happiness_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Happiness_Drummond"
+    },
+    "Caring_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Caring_Drummond"
+    },
+    "Confusion_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Confusion_Drummond"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasDuration",
+      "@type" : "@id"
+    },
+    "Frijda_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Frijda_Category"
+    },
+    "Fear_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Fear_Drummond"
+    },
+    "Affective_State_Model" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State_Model"
+    },
+    "Affective_State" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Affective_State"
+    },
+    "FSRE_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#FSRE_Category"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Mental-State" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State"
+    },
+    "Loneliness_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Loneliness_Drummond"
+    },
+    "Negative__not_in_control_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative__not_in_control_DC"
+    },
+    "hasCategory" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasCategory",
+      "@type" : "@id"
+    },
+    "duration" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#duration"
+    },
+    "hasLevel" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#hasLevel",
+      "@type" : "@id"
+    },
+    "Caring_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Caring_DC"
+    },
+    "Anger_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Anger_Drummond"
+    },
+    "Social_Emotion_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Social_Emotion_Category"
+    },
+    "Mood" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Mood"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Reactive_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Reactive_DC"
+    },
+    "isModelFor" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isModelFor",
+      "@type" : "@id"
+    },
+    "associated_Emotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#associated_Emotion"
+    },
+    "Negative_Forceful_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Negative_Forceful_DC"
+    },
+    "Positive_Thoughts_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Positive_Thoughts_DC"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "Positive_Lively_DC" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Positive_Lively_DC"
+    },
+    "LevelOfEmotion" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#LevelOfEmotion"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    },
+    "Positive_Negative_Neutral_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Positive_Negative_Neutral_Category"
+    },
+    "Depression_Drummond" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Depression_Drummond"
+    },
+    "Every_Day_Emotion_Category" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#Every_Day_Emotion_Category"
+    },
+    "isCategoryOf" : {
+      "@id" : "http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO#isCategoryOf",
+      "@type" : "@id"
+    }
+  }
+}

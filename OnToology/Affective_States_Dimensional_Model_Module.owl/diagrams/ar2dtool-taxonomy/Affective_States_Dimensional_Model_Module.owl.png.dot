@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "3e67aa19:161d855da53:-7fce" ":Dimensional_Model" ":Fontaine_Model" ":PAD_Model" ":Emotion" ":Mood" ":Affective_State" "3e67aa19:161d855da53:-7fd2" ":Watson_and_Tellegan_Model" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" ":Affective_State_Model" ":Circumplex_Model" ; /*classes style*/
+	":Dimensional_Model" -> "3e67aa19:161d855da53:-7fce" [ label = "rdfs:subClassOf" ];
+	":Dimensional_Model" -> ":Affective_State_Model" [ label = "rdfs:subClassOf" ];
+	":Affective_State" -> "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" [ label = "rdfs:subClassOf" ];
+	":Circumplex_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
+	":Affective_State_Model" -> "3e67aa19:161d855da53:-7fd2" [ label = "rdfs:subClassOf" ];
+	"http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Fontaine_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
+	":PAD_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
+	":Mood" -> ":Affective_State" [ label = "rdfs:subClassOf" ];
+	":Emotion" -> ":Affective_State" [ label = "rdfs:subClassOf" ];
+	":Watson_and_Tellegan_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
+
+}
