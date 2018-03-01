@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "HASIO:Extraversion" "HASIO:Personality" "HASIO:Subjective_well_Being_Model" "FHNOntology:SynergesticSingularSatisfier" "FHNOntology:Identity" "FHNOntology1:EntityWithSatisfiers" "FHNOntology1:FreedomSub" "FHNOntology1:NeedsWithoutSatisfiers" "-66eca4c4:161d859d6c2:-7fd8" "-66eca4c4:161d859d6c2:-7fca" "HASIO:Neuroticism_Positive_Pole" "HASIO:Neuroticism_Negative_Pole" "FHNOntology:Exercise" "HASIO:Conscientiousness" "FHNOntology:ProtectBelonging" "FHNOntology:ProtectFamily" "FHNOntology:Destroyer" ":Group" "HASIO:Influence" "FHNOntology1:IdenSub" "FHNOntology:Subsistence" "HASIO:Neuroticism" "HASIO:Conscientiousness_Positive_Pole" "FHNOntology1:RolesWithoutSatisfiers" "FHNOntology1:CreaSub" "HASIO:Openness_Negative_Pole" ":Person" "base:Life_Satisfaction" "FHNOntology1:PartSub" "FHNOntology1:RoleWithSatisfiers" "HASIO:Fundamental_Human_Needs" "HASIO:Need" "FHNOntology:Fitness" "FHNOntology:Protection" "HASIO:Subjective_Well_Being" "HASIO:Self-Determination_Theory" "-66eca4c4:161d859d6c2:-7fa1" "HASIO:Agreeableness" "FHNOntology:Fundamental_Need" "FHNOntology:SpecializedFitness" "HASIO:Extraversion_Positive_Pole" "HASIO:Openness_Positive_Pole" "-66eca4c4:161d859d6c2:-7fdc" "FHNOntology:ExistentialCategory" "base:Unpleasant_Affect" "base:Autonomy" "HASIO:Conscientiousness_Negative_Pole" "FHNOntology1:EntityWithoutSatisfiers" "FHNOntology1:IdlenessSub" ":Role" "FHNOntology:UnderstandingAcademics" "FHNOntology:InhibitingSatisfier" ":Organization" "HASIO:Openness" "FHNOntology:Idleness" "FHNOntology:Creation" ":Agent" "FHNOntology:Being" "FHNOntology:UnderstandingNewCulture" "FHNOntology:Freedom" "FHNOntology:MentalHealth" "-66eca4c4:161d859d6c2:-7fc1" "FHNOntology:Understanding" "FHNOntology:HealthyFood" "HASIO:Extraversion_Negative_Pole" "base:Relatedness" "FHNOntology:Affection" "FHNOntology:Satisfier" "FHNOntology1:AgentWithSatisfiers" "HASIO:Personality_Model" "-66eca4c4:161d859d6c2:-7fd4" "FHNOntology:UnderstandingNewLanguage" "HASIO:Agreeableness_Negative_Pole" "FHNOntology:HealthNeed" "FHNOntology1:NeedWithSatisfiers" "FHNOntology:PhysicalHealth" "base:Pleasant_Affect" "FHNOntology:Doing" "HASIO:Big_Five_Personality_Traits" "FHNOntology:Interacting" "FHNOntology1:AffSub" "HASIO:Needs_Model" "FHNOntology:ShelterNeed" "FHNOntology:CompetitorRole" "HASIO:Agreeableness_Positive_Pole" "FHNOntology:Having" "FHNOntology:ProtectOneself" "base:Competence" "FHNOntology:Sunlight" "FHNOntology:Food" "HASIO:Influence_Model" "FHNOntology:Participation" "FHNOntology:ExtremelyHealthyFood" ; /*classes style*/
+node [shape = rectangle, color="black"]; "HASIO:Personality" "HASIO:Extraversion" "HASIO:Subjective_well_Being_Model" "FHNOntology:SynergesticSingularSatisfier" "FHNOntology:Identity" "63f2981f:161de410451:-7fa1" "FHNOntology1:EntityWithSatisfiers" "FHNOntology1:FreedomSub" "FHNOntology1:NeedsWithoutSatisfiers" "HASIO:Neuroticism_Positive_Pole" "HASIO:Neuroticism_Negative_Pole" "FHNOntology:Exercise" "HASIO:Conscientiousness" "FHNOntology:ProtectBelonging" "FHNOntology:ProtectFamily" "FHNOntology:Destroyer" ":Group" "HASIO:Influence" "FHNOntology1:IdenSub" "FHNOntology:Subsistence" "HASIO:Neuroticism" "HASIO:Conscientiousness_Positive_Pole" "FHNOntology1:RolesWithoutSatisfiers" "63f2981f:161de410451:-7fc1" "FHNOntology1:CreaSub" "HASIO:Openness_Negative_Pole" ":Person" "base:Life_Satisfaction" "FHNOntology1:PartSub" "FHNOntology1:RoleWithSatisfiers" "HASIO:Fundamental_Human_Needs" "HASIO:Need" "FHNOntology:Fitness" "FHNOntology:Protection" "HASIO:Subjective_Well_Being" "HASIO:Self-Determination_Theory" "HASIO:Agreeableness" "FHNOntology:Fundamental_Need" "FHNOntology:SpecializedFitness" "HASIO:Extraversion_Positive_Pole" "HASIO:Openness_Positive_Pole" "FHNOntology:ExistentialCategory" "base:Unpleasant_Affect" "base:Autonomy" "HASIO:Conscientiousness_Negative_Pole" "FHNOntology1:EntityWithoutSatisfiers" "FHNOntology1:IdlenessSub" ":Role" "FHNOntology:UnderstandingAcademics" "FHNOntology:InhibitingSatisfier" ":Organization" "HASIO:Openness" "FHNOntology:Idleness" "FHNOntology:Creation" ":Agent" "63f2981f:161de410451:-7fd4" "FHNOntology:Being" "FHNOntology:Freedom" "FHNOntology:UnderstandingNewCulture" "FHNOntology:MentalHealth" "FHNOntology:Understanding" "63f2981f:161de410451:-7fdc" "63f2981f:161de410451:-7fd8" "FHNOntology:HealthyFood" "HASIO:Extraversion_Negative_Pole" "base:Relatedness" "FHNOntology:Affection" "FHNOntology:Satisfier" "FHNOntology1:AgentWithSatisfiers" "HASIO:Personality_Model" "FHNOntology:UnderstandingNewLanguage" "HASIO:Agreeableness_Negative_Pole" "FHNOntology:HealthNeed" "FHNOntology1:NeedWithSatisfiers" "FHNOntology:PhysicalHealth" "base:Pleasant_Affect" "FHNOntology:Doing" "HASIO:Big_Five_Personality_Traits" "FHNOntology:Interacting" "63f2981f:161de410451:-7fca" "FHNOntology1:AffSub" "HASIO:Needs_Model" "FHNOntology:ShelterNeed" "FHNOntology:CompetitorRole" "HASIO:Agreeableness_Positive_Pole" "FHNOntology:Having" "FHNOntology:ProtectOneself" "base:Competence" "FHNOntology:Sunlight" "FHNOntology:Food" "HASIO:Influence_Model" "FHNOntology:Participation" "FHNOntology:ExtremelyHealthyFood" ; /*classes style*/
 	"FHNOntology:Interacting" -> "FHNOntology:ExistentialCategory" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:UnderstandingNewCulture" -> "FHNOntology:Understanding" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:PhysicalHealth" -> "FHNOntology:HealthNeed" [ label = "rdfs:subClassOf" ];
@@ -38,14 +38,14 @@ node [shape = rectangle, color="black"]; "HASIO:Extraversion" "HASIO:Personality
 	"FHNOntology1:RoleWithSatisfiers" -> "FHNOntology1:EntityWithSatisfiers" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:CompetitorRole" -> ":Role" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:ProtectFamily" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
-	"HASIO:Subjective_Well_Being" -> "-66eca4c4:161d859d6c2:-7fc1" [ label = "rdfs:subClassOf" ];
+	"HASIO:Subjective_Well_Being" -> "63f2981f:161de410451:-7fc1" [ label = "rdfs:subClassOf" ];
 	"HASIO:Subjective_Well_Being" -> "HASIO:Influence" [ label = "rdfs:subClassOf" ];
 	"HASIO:Neuroticism_Positive_Pole" -> "HASIO:Neuroticism" [ label = "rdfs:subClassOf" ];
 	"HASIO:Agreeableness_Positive_Pole" -> "HASIO:Agreeableness" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:MentalHealth" -> "FHNOntology:HealthNeed" [ label = "rdfs:subClassOf" ];
 	"HASIO:Conscientiousness" -> "HASIO:Big_Five_Personality_Traits" [ label = "rdfs:subClassOf" ];
 	"FHNOntology1:AgentWithSatisfiers" -> "FHNOntology1:EntityWithSatisfiers" [ label = "rdfs:subClassOf" ];
-	"HASIO:Need" -> "-66eca4c4:161d859d6c2:-7fd4" [ label = "rdfs:subClassOf" ];
+	"HASIO:Need" -> "63f2981f:161de410451:-7fd4" [ label = "rdfs:subClassOf" ];
 	"HASIO:Need" -> "HASIO:Influence" [ label = "rdfs:subClassOf" ];
 	"HASIO:Self-Determination_Theory" -> "HASIO:Needs_Model" [ label = "rdfs:subClassOf" ];
 	"base:Life_Satisfaction" -> "HASIO:Subjective_well_Being_Model" [ label = "rdfs:subClassOf" ];
@@ -56,14 +56,14 @@ node [shape = rectangle, color="black"]; "HASIO:Extraversion" "HASIO:Personality
 	"HASIO:Extraversion_Negative_Pole" -> "HASIO:Extraversion" [ label = "rdfs:subClassOf" ];
 	":Organization" -> ":Agent" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:Protection" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
-	"HASIO:Personality" -> "-66eca4c4:161d859d6c2:-7fca" [ label = "rdfs:subClassOf" ];
+	"HASIO:Personality" -> "63f2981f:161de410451:-7fca" [ label = "rdfs:subClassOf" ];
 	"HASIO:Personality" -> "HASIO:Influence" [ label = "rdfs:subClassOf" ];
 	"FHNOntology1:IdlenessSub" -> "FHNOntology:Idleness" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:ProtectOneself" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
 	"FHNOntology1:IdenSub" -> "FHNOntology:Identity" [ label = "rdfs:subClassOf" ];
 	"HASIO:Agreeableness" -> "HASIO:Big_Five_Personality_Traits" [ label = "rdfs:subClassOf" ];
 	"HASIO:Openness" -> "HASIO:Big_Five_Personality_Traits" [ label = "rdfs:subClassOf" ];
-	"HASIO:Influence_Model" -> "-66eca4c4:161d859d6c2:-7fd8" [ label = "rdfs:subClassOf" ];
+	"HASIO:Influence_Model" -> "63f2981f:161de410451:-7fd8" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:ExistentialCategory" -> "HASIO:Fundamental_Human_Needs" [ label = "rdfs:subClassOf" ];
 	"FHNOntology1:AffSub" -> "FHNOntology:Affection" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:SynergesticSingularSatisfier" -> "FHNOntology:Satisfier" [ label = "rdfs:subClassOf" ];
@@ -72,7 +72,7 @@ node [shape = rectangle, color="black"]; "HASIO:Extraversion" "HASIO:Personality
 	"HASIO:Agreeableness_Negative_Pole" -> "HASIO:Agreeableness" [ label = "rdfs:subClassOf" ];
 	"FHNOntology1:EntityWithSatisfiers" -> "HASIO:Fundamental_Human_Needs" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:Satisfier" -> "HASIO:Fundamental_Human_Needs" [ label = "rdfs:subClassOf" ];
-	"HASIO:Influence" -> "-66eca4c4:161d859d6c2:-7fdc" [ label = "rdfs:subClassOf" ];
+	"HASIO:Influence" -> "63f2981f:161de410451:-7fdc" [ label = "rdfs:subClassOf" ];
 	"HASIO:Personality_Model" -> "HASIO:Influence_Model" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:Freedom" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
 	":Person" -> ":Agent" [ label = "rdfs:subClassOf" ];
@@ -90,7 +90,7 @@ node [shape = rectangle, color="black"]; "HASIO:Extraversion" "HASIO:Personality
 	"HASIO:Conscientiousness_Positive_Pole" -> "HASIO:Conscientiousness" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:ProtectBelonging" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:Sunlight" -> "FHNOntology:SynergesticSingularSatisfier" [ label = "rdfs:subClassOf" ];
-	"FHNOntology:HealthyFood" -> "-66eca4c4:161d859d6c2:-7fa1" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:HealthyFood" -> "63f2981f:161de410451:-7fa1" [ label = "rdfs:subClassOf" ];
 	"FHNOntology:HealthyFood" -> "FHNOntology:Food" [ label = "rdfs:subClassOf" ];
 	"HASIO:Openness_Positive_Pole" -> "HASIO:Openness" [ label = "rdfs:subClassOf" ];
 	"HASIO:Extraversion" -> "HASIO:Big_Five_Personality_Traits" [ label = "rdfs:subClassOf" ];
