@@ -1,0 +1,65 @@
+{
+  "@context" : {
+    "Positive_Word" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Positive_Word"
+    },
+    "hasModel" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#hasModel",
+      "@type" : "@id"
+    },
+    "Discrete_Model" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Discrete_Model"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "isAnnotatedBy" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#isAnnotatedBy",
+      "@type" : "@id"
+    },
+    "Sentiment" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Sentiment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Affective_State_Model" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Affective_State_Model"
+    },
+    "Affective_State" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Affective_State"
+    },
+    "Affective_States_Annotations" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Affective_States_Annotations"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isModelFor" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#isModelFor",
+      "@type" : "@id"
+    },
+    "isAnnotatotedFor" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#isAnnotatotedFor",
+      "@type" : "@id"
+    },
+    "strength_score" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#strength_score"
+    },
+    "Negative_Word" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Negative_Word"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    },
+    "Positive_Negative_Neutral_Category" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Positive_Negative_Neutral_Category"
+    },
+    "Neutral_Word" : {
+      "@id" : "http://www.semanticweb.org/rana-/ontologies/2017/10/AFO#Neutral_Word"
+    }
+  }
+}
