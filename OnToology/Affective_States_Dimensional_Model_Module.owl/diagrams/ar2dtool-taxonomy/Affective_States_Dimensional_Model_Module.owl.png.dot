@@ -1,12 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Dimensional_Model" ":Fontaine_Model" ":PAD_Model" ":Emotion" ":Mood" "-8103a05:161ddfcb1df:-7fce" ":Affective_State" ":Watson_and_Tellegan_Model" "-8103a05:161ddfcb1df:-7fd2" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" ":Affective_State_Model" ":Circumplex_Model" ; /*classes style*/
-	":Dimensional_Model" -> "-8103a05:161ddfcb1df:-7fce" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; ":Dimensional_Model" ":Fontaine_Model" "-5b40be8:1631f23a2d9:-7fce" ":PAD_Model" ":Emotion" ":Mood" ":Affective_State" "-5b40be8:1631f23a2d9:-7fd2" ":Watson_and_Tellegan_Model" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" ":Affective_State_Model" ":Circumplex_Model" ; /*classes style*/
+	":Dimensional_Model" -> "-5b40be8:1631f23a2d9:-7fce" [ label = "rdfs:subClassOf" ];
 	":Dimensional_Model" -> ":Affective_State_Model" [ label = "rdfs:subClassOf" ];
 	":Affective_State" -> "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" [ label = "rdfs:subClassOf" ];
 	":Circumplex_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
-	":Affective_State_Model" -> "-8103a05:161ddfcb1df:-7fd2" [ label = "rdfs:subClassOf" ];
+	":Affective_State_Model" -> "-5b40be8:1631f23a2d9:-7fd2" [ label = "rdfs:subClassOf" ];
 	"http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":Fontaine_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
 	":PAD_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
