@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":OCC_Emotion_Category" "HASIO:Happiness_Drummond" "HASIO:Basic_Emotion_Category" "HASIO:Negative_Forceful_DC" "HASIO:Affective_State_Model" "HASIO:Loneliness_Drummond" "HASIO:Positive_Thoughts_DC" "HASIO:Sentiment" "HASIO:Agitation_DC" "HASIO:Emotion" "HASIO:Affective_State" "HASIO:LevelOfEmotion" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" "HASIO:Confusion_Drummond" "HASIO:Mood" "HASIO:Frijda_Category" "HASIO:Douglas-Cowie_Category" "HASIO:Remorse_Drummond" "HASIO:Anger_Drummond" "HASIO:Inadequateness_Drummond" "HASIO:Negative_Thoughts_DC" "HASIO:Negative__not_in_control_DC" "HASIO:Fear_Drummond" "HASIO:Positive_Negative_Neutral_Category" "HASIO:Depression_Drummond" "HASIO:Drummond_Category" "HASIO:Hurt_Drummond" "HASIO:Social_Emotion_Category" "HASIO:Negative_passive_DC" "HASIO:Caring_DC" "5523ea1d:161de08bc5a:-7fd1" "HASIO:Caring_Drummond" "HASIO:Reactive_DC" "HASIO:Quiet_Positive_DC" "HASIO:Every_Day_Emotion_Category" "HASIO:Discrete_Model" "HASIO:Positive_Lively_DC" "HASIO:FSRE_Category" "5523ea1d:161de08bc5a:-7fc8" "5523ea1d:161de08bc5a:-7fd5" ; /*classes style*/
+node [shape = rectangle, color="black"]; "HASIO:Happiness_Drummond" "HASIO:Basic_Emotion_Category" "HASIO:Negative_Forceful_DC" "HASIO:Affective_State_Model" "HASIO:Loneliness_Drummond" "HASIO:Positive_Thoughts_DC" "43ef723b:1631f23cade:-7fd5" "HASIO:Sentiment" "HASIO:Agitation_DC" "HASIO:Emotion" "HASIO:Affective_State" "HASIO:LevelOfEmotion" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" "HASIO:Confusion_Drummond" "HASIO:Mood" "43ef723b:1631f23cade:-7fc8" "HASIO:Frijda_Category" "HASIO:Douglas-Cowie_Category" "HASIO:Remorse_Drummond" "HASIO:Anger_Drummond" "HASIO:Inadequateness_Drummond" "HASIO:Negative_Thoughts_DC" "HASIO:Negative__not_in_control_DC" "HASIO:Fear_Drummond" "HASIO:Positive_Negative_Neutral_Category" "HASIO:Depression_Drummond" "HASIO:Drummond_Category" "HASIO:Hurt_Drummond" "HASIO:Social_Emotion_Category" "HASIO:Negative_passive_DC" "HASIO:Caring_DC" "HASIO:Caring_Drummond" "HASIO:Reactive_DC" "43ef723b:1631f23cade:-7fd1" "HASIO:Quiet_Positive_DC" "HASIO:Every_Day_Emotion_Category" "HASIO:Discrete_Model" "HASIO:Positive_Lively_DC" "HASIO:FSRE_Category" ":OCC_Emotion_Category" ; /*classes style*/
 	"HASIO:Positive_Negative_Neutral_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
 	"HASIO:Loneliness_Drummond" -> "HASIO:Drummond_Category" [ label = "rdfs:subClassOf" ];
 	"HASIO:Anger_Drummond" -> "HASIO:Drummond_Category" [ label = "rdfs:subClassOf" ];
@@ -12,7 +12,7 @@ node [shape = rectangle, color="black"]; ":OCC_Emotion_Category" "HASIO:Happines
 	"HASIO:Emotion" -> "HASIO:Affective_State" [ label = "rdfs:subClassOf" ];
 	"HASIO:Social_Emotion_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
 	"http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"HASIO:Discrete_Model" -> "5523ea1d:161de08bc5a:-7fd1" [ label = "rdfs:subClassOf" ];
+	"HASIO:Discrete_Model" -> "43ef723b:1631f23cade:-7fd1" [ label = "rdfs:subClassOf" ];
 	"HASIO:Discrete_Model" -> "HASIO:Affective_State_Model" [ label = "rdfs:subClassOf" ];
 	"HASIO:Frijda_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
 	"HASIO:Reactive_DC" -> "HASIO:Douglas-Cowie_Category" [ label = "rdfs:subClassOf" ];
@@ -28,9 +28,9 @@ node [shape = rectangle, color="black"]; ":OCC_Emotion_Category" "HASIO:Happines
 	"HASIO:Caring_Drummond" -> "HASIO:Drummond_Category" [ label = "rdfs:subClassOf" ];
 	":OCC_Emotion_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
 	"HASIO:Happiness_Drummond" -> "HASIO:Drummond_Category" [ label = "rdfs:subClassOf" ];
-	"HASIO:LevelOfEmotion" -> "5523ea1d:161de08bc5a:-7fc8" [ label = "rdfs:subClassOf" ];
+	"HASIO:LevelOfEmotion" -> "43ef723b:1631f23cade:-7fc8" [ label = "rdfs:subClassOf" ];
 	"HASIO:Confusion_Drummond" -> "HASIO:Drummond_Category" [ label = "rdfs:subClassOf" ];
-	"HASIO:Affective_State_Model" -> "5523ea1d:161de08bc5a:-7fd5" [ label = "rdfs:subClassOf" ];
+	"HASIO:Affective_State_Model" -> "43ef723b:1631f23cade:-7fd5" [ label = "rdfs:subClassOf" ];
 	"HASIO:Negative_passive_DC" -> "HASIO:Douglas-Cowie_Category" [ label = "rdfs:subClassOf" ];
 	"HASIO:Positive_Thoughts_DC" -> "HASIO:Douglas-Cowie_Category" [ label = "rdfs:subClassOf" ];
 	"HASIO:FSRE_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
