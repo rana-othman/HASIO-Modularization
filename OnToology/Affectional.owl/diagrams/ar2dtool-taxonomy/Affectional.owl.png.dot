@@ -1,8 +1,8 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Positive_Word" "-245167d8:1631bd41a07:-7ff7" "base:Discrete_Model" "base:Sentiment" "base:Affective_State_Model" "base:Positive_Negative_Neutral_Category" "base:Affective_States_Annotations" "base:Negative_Word" "base:Neutral_Word" "base:Affective_State" ; /*classes style*/
-	"base:Affective_State" -> "-245167d8:1631bd41a07:-7ff7" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "base:Positive_Word" "base:Discrete_Model" "base:Sentiment" "base:Affective_State_Model" "base:Positive_Negative_Neutral_Category" "base:Affective_States_Annotations" "base:Negative_Word" "4eef2811:1633b5fe189:-7ff7" "base:Neutral_Word" "base:Affective_State" ; /*classes style*/
+	"base:Affective_State" -> "4eef2811:1633b5fe189:-7ff7" [ label = "rdfs:subClassOf" ];
 	"base:Affective_State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"base:Sentiment" -> "base:Affective_State" [ label = "rdfs:subClassOf" ];
 	"base:Affective_States_Annotations" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
