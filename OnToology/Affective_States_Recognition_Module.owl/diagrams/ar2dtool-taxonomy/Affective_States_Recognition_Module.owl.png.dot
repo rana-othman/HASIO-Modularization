@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Mobile_Device" ":Voice_Recognition" ":Sentiment" ":Heart_Rate_Sensor" ":Neurological_Response_Sensor" ":Haptic-Devices" ":Electrocardiogram_Sensor" ":Still_Image" ":Sensor" ":Emotion" "79406d18:163e74a1ba1:-7fe7" ":Skin_Conductance_Response_Sensor" ":Mood" ":Mobile_Brainwave_Sensors" ":Affective_State" ":recorded_Voice" ":Electromyography_Sensor" ":Physiological_Sensor" ":Emotion_Recognition" ":Skin_Temperature_Sensor" ":Facial_Recognition" ":Skin_Conductivity_Sensor" ":Recorded_Video" ":Surveillance_Camera" ":Gestures_Recognition" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" ":Mood_Recognition" ":Smart_Phone" ":Sentiment_Recognition" ":Social_Media" ":Respiration_Sensor" ":Blood_Volume_Pulse_Sensor" ":Affective_State_Recognition" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":Mobile_Device" ":Voice_Recognition" ":Sentiment" ":Heart_Rate_Sensor" ":Neurological_Response_Sensor" ":Haptic-Devices" ":Electrocardiogram_Sensor" ":Still_Image" ":Sensor" ":Emotion" ":Skin_Conductance_Response_Sensor" ":Mood" ":Mobile_Brainwave_Sensors" ":Affective_State" ":recorded_Voice" ":Electromyography_Sensor" "36662795:163e7860c1f:-7fe7" ":Physiological_Sensor" ":Emotion_Recognition" ":Skin_Temperature_Sensor" ":Facial_Recognition" ":Skin_Conductivity_Sensor" ":Recorded_Video" ":Surveillance_Camera" ":Gestures_Recognition" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" ":Mood_Recognition" ":Smart_Phone" ":Sentiment_Recognition" ":Social_Media" ":Respiration_Sensor" ":Blood_Volume_Pulse_Sensor" ":Affective_State_Recognition" ; /*classes style*/
 	":Emotion_Recognition" -> ":Affective_State_Recognition" [ label = "rdfs:subClassOf" ];
 	":Voice_Recognition" -> ":recorded_Voice" [ label = "rdfs:subClassOf" ];
 	":Voice_Recognition" -> ":Surveillance_Camera" [ label = "rdfs:subClassOf" ];
@@ -25,7 +25,7 @@ node [shape = rectangle, color="black"]; ":Mobile_Device" ":Voice_Recognition" "
 	":Affective_State" -> "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" [ label = "rdfs:subClassOf" ];
 	":Mobile_Brainwave_Sensors" -> ":Neurological_Response_Sensor" [ label = "rdfs:subClassOf" ];
 	":Still_Image" -> ":Emotion_Recognition" [ label = "rdfs:subClassOf" ];
-	":Affective_State_Recognition" -> "79406d18:163e74a1ba1:-7fe7" [ label = "rdfs:subClassOf" ];
+	":Affective_State_Recognition" -> "36662795:163e7860c1f:-7fe7" [ label = "rdfs:subClassOf" ];
 	":Recorded_Video" -> ":Emotion_Recognition" [ label = "rdfs:subClassOf" ];
 	":Sentiment_Recognition" -> ":Affective_State_Recognition" [ label = "rdfs:subClassOf" ];
 	":Blood_Volume_Pulse_Sensor" -> ":Physiological_Sensor" [ label = "rdfs:subClassOf" ];
