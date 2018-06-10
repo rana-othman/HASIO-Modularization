@@ -1,13 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Affective_State_Model" ":Personality" "http://xmlns.com/foaf/0.1/Document" ":Sentiment" ":Emotion" "http://xmlns.com/foaf/0.1/OnlineGamingAccount" "http://xmlns.com/foaf/0.1/Group" ":Influence" ":Affective_State" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" "http://xmlns.com/foaf/0.1/LabelProperty" ":Mood" ":Dimensional_Model" "http://xmlns.com/foaf/0.1/Person" ":Need" "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount" ":Subjective_Well_Being" "http://schema.org/CreativeWork" "-413cbdb5:1633ea0ab0c:-7fd9" "-413cbdb5:1633ea0ab0c:-7fc3" "-413cbdb5:1633ea0ab0c:-7fb8" "http://xmlns.com/foaf/0.1/Organization" "http://xmlns.com/foaf/0.1/Agent" ":Physical-State" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#behaviour" ":Personality_Model" "http://xmlns.com/foaf/0.1/OnlineChatAccount" "http://xmlns.com/foaf/0.1/Image" "http://xmlns.com/foaf/0.1/PersonalProfileDocument" ":Big_Five_Personality_Traits" ":PAD_Model" "http://xmlns.com/foaf/0.1/Project" "http://schema.org/ImageObject" "http://xmlns.com/foaf/0.1/OnlineAccount" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":Affective_State_Model" ":Personality" "http://xmlns.com/foaf/0.1/Document" "-1d69bf1d:163e6ff3c81:-7fb8" ":Sentiment" ":Emotion" "http://xmlns.com/foaf/0.1/OnlineGamingAccount" "http://xmlns.com/foaf/0.1/Group" ":Influence" ":Affective_State" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" "http://xmlns.com/foaf/0.1/LabelProperty" ":Mood" ":Dimensional_Model" "http://xmlns.com/foaf/0.1/Person" ":Need" "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount" ":Subjective_Well_Being" "http://schema.org/CreativeWork" "http://xmlns.com/foaf/0.1/Organization" "-1d69bf1d:163e6ff3c81:-7fd9" "http://xmlns.com/foaf/0.1/Agent" ":Physical-State" "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#behaviour" ":Personality_Model" "http://xmlns.com/foaf/0.1/OnlineChatAccount" "http://xmlns.com/foaf/0.1/Image" "-1d69bf1d:163e6ff3c81:-7fc3" "http://xmlns.com/foaf/0.1/PersonalProfileDocument" ":Big_Five_Personality_Traits" ":PAD_Model" "http://xmlns.com/foaf/0.1/Project" "http://schema.org/ImageObject" "http://xmlns.com/foaf/0.1/OnlineAccount" ; /*classes style*/
 	"http://xmlns.com/foaf/0.1/Project" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":Physical-State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"http://xmlns.com/foaf/0.1/Document" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":PAD_Model" -> ":Dimensional_Model" [ label = "rdfs:subClassOf" ];
 	"http://schema.org/ImageObject" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	":Emotion" -> "-413cbdb5:1633ea0ab0c:-7fd9" [ label = "rdfs:subClassOf" ];
+	":Emotion" -> "-1d69bf1d:163e6ff3c81:-7fd9" [ label = "rdfs:subClassOf" ];
 	":Emotion" -> ":Affective_State" [ label = "rdfs:subClassOf" ];
 	":Influence" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"http://xmlns.com/foaf/0.1/OnlineGamingAccount" -> "http://xmlns.com/foaf/0.1/OnlineAccount" [ label = "rdfs:subClassOf" ];
@@ -21,8 +21,8 @@ node [shape = rectangle, color="black"]; ":Affective_State_Model" ":Personality"
 	":Subjective_Well_Being" -> ":Influence" [ label = "rdfs:subClassOf" ];
 	"http://xmlns.com/foaf/0.1/Image" -> "http://xmlns.com/foaf/0.1/Document" [ label = "rdfs:subClassOf" ];
 	":Affective_State" -> "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State" [ label = "rdfs:subClassOf" ];
-	"http://xmlns.com/foaf/0.1/Person" -> "-413cbdb5:1633ea0ab0c:-7fc3" [ label = "rdfs:subClassOf" ];
-	"http://xmlns.com/foaf/0.1/Person" -> "-413cbdb5:1633ea0ab0c:-7fb8" [ label = "rdfs:subClassOf" ];
+	"http://xmlns.com/foaf/0.1/Person" -> "-1d69bf1d:163e6ff3c81:-7fb8" [ label = "rdfs:subClassOf" ];
+	"http://xmlns.com/foaf/0.1/Person" -> "-1d69bf1d:163e6ff3c81:-7fc3" [ label = "rdfs:subClassOf" ];
 	"http://xmlns.com/foaf/0.1/Person" -> "http://xmlns.com/foaf/0.1/Agent" [ label = "rdfs:subClassOf" ];
 	":Dimensional_Model" -> ":Affective_State_Model" [ label = "rdfs:subClassOf" ];
 	"http://xmlns.com/foaf/0.1/Agent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];

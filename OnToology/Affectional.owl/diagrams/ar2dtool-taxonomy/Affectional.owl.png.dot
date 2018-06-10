@@ -1,15 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Positive_Word" "base:Discrete_Model" "base:Sentiment" "base:Affective_State_Model" "base:Positive_Negative_Neutral_Category" "base:Affective_States_Annotations" "base:Negative_Word" "4eef2811:1633b5fe189:-7ff7" "base:Neutral_Word" "base:Affective_State" ; /*classes style*/
-	"base:Affective_State" -> "4eef2811:1633b5fe189:-7ff7" [ label = "rdfs:subClassOf" ];
-	"base:Affective_State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:Sentiment" -> "base:Affective_State" [ label = "rdfs:subClassOf" ];
-	"base:Affective_States_Annotations" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:Positive_Word" -> "base:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
-	"base:Negative_Word" -> "base:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
-	"base:Discrete_Model" -> "base:Affective_State_Model" [ label = "rdfs:subClassOf" ];
-	"base:Positive_Negative_Neutral_Category" -> "base:Discrete_Model" [ label = "rdfs:subClassOf" ];
-	"base:Neutral_Word" -> "base:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "HASIO:Discrete_Model" "HASIO:Sentiment" "HASIO:Negative_Word" "HASIO:Positive_Word" "HASIO:Affective_State_Polarity" "HASIO:Affective_State" "HASIO:Positive_Negative_Neutral_Category" "HASIO:Affective_State_Model" "HASIO:Neutral_Word" "3fcd446d:163db0b9161:-7ff7" ; /*classes style*/
+	"HASIO:Affective_State" -> "3fcd446d:163db0b9161:-7ff7" [ label = "rdfs:subClassOf" ];
+	"HASIO:Affective_State" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"HASIO:Sentiment" -> "HASIO:Affective_State" [ label = "rdfs:subClassOf" ];
+	"HASIO:Positive_Negative_Neutral_Category" -> "HASIO:Discrete_Model" [ label = "rdfs:subClassOf" ];
+	"HASIO:Affective_State_Polarity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"HASIO:Neutral_Word" -> "HASIO:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
+	"HASIO:Positive_Word" -> "HASIO:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
+	"HASIO:Discrete_Model" -> "HASIO:Affective_State_Model" [ label = "rdfs:subClassOf" ];
+	"HASIO:Negative_Word" -> "HASIO:Positive_Negative_Neutral_Category" [ label = "rdfs:subClassOf" ];
 
 }
