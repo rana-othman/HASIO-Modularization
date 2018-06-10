@@ -1,8 +1,8 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "-531e814e:163e73a670b:-7fe8" ":Personality" ":Need" ":Needs_Recognition" ":Subjective_Well_Being" "-531e814e:163e73a670b:-7fe4" ":Subjective_well_Being_Recognition" ":Personality_Recognition" ":Influence" ":Smart_Phone" ":Social_Media" ":Influence_Recognition" ; /*classes style*/
-	":Influence" -> "-531e814e:163e73a670b:-7fe8" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; ":Personality" ":Need" ":Needs_Recognition" ":Subjective_Well_Being" "199cce4f:163e753b0ca:-7fe4" ":Subjective_well_Being_Recognition" "199cce4f:163e753b0ca:-7fe8" ":Personality_Recognition" ":Influence" ":Smart_Phone" ":Social_Media" ":Influence_Recognition" ; /*classes style*/
+	":Influence" -> "199cce4f:163e753b0ca:-7fe8" [ label = "rdfs:subClassOf" ];
 	":Subjective_well_Being_Recognition" -> ":Influence_Recognition" [ label = "rdfs:subClassOf" ];
 	":Subjective_Well_Being" -> ":Influence" [ label = "rdfs:subClassOf" ];
 	":Need" -> ":Influence" [ label = "rdfs:subClassOf" ];
@@ -11,7 +11,7 @@ node [shape = rectangle, color="black"]; "-531e814e:163e73a670b:-7fe8" ":Persona
 	":Social_Media" -> ":Needs_Recognition" [ label = "rdfs:subClassOf" ];
 	":Personality_Recognition" -> ":Influence_Recognition" [ label = "rdfs:subClassOf" ];
 	":Personality" -> ":Influence" [ label = "rdfs:subClassOf" ];
-	":Influence_Recognition" -> "-531e814e:163e73a670b:-7fe4" [ label = "rdfs:subClassOf" ];
+	":Influence_Recognition" -> "199cce4f:163e753b0ca:-7fe4" [ label = "rdfs:subClassOf" ];
 	":Smart_Phone" -> ":Subjective_well_Being_Recognition" [ label = "rdfs:subClassOf" ];
 	":Smart_Phone" -> ":Personality_Recognition" [ label = "rdfs:subClassOf" ];
 
